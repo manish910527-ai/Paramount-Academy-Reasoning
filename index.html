@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+content="#0B1F3A">
+
+<title>Paramount Academy Khandwa
+
+</title><!-- Google Font --><link rel="preconnect"
+href="https://fonts.googleapis.com"><link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"><!-- Font Awesome --><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><!-- Main CSS --><link rel="stylesheet"
+href="css/style.css"></head><body><!-- ==========================
+     SPLASH SCREEN
+=========================== --><div id="splashScreen"><img
+src="assets/logo.png"
+alt="Logo"
+id="logo">
+
+<h1>PARAMOUNT ACADEMY
+
+</h1><p>Reasoning By Manish Sir
+
+</p></div><!-- ==========================
+     MAIN APP
+=========================== --><div id="app"><!-- ==========================
+     HEADER
+=========================== --><header><div class="header-left"><img
+src="assets/logo.png"
+class="logo"
+alt="Logo">
+
+</div><div class="header-center"><h1>PARAMOUNT ACADEMY
+
+</h1><h3>KHANDWA
+
+</h3><p>Reasoning By Manish Sir
+
+</p></div></header><!-- ==========================
+     HERO BANNER
+=========================== --><section class="banner"><img
+src="assets/banner.jpg"
+alt="Banner">
+
+<div class="banner-overlay"><h2>60 Days Railway + MP Police
+
+</h2><p>1000+ Previous Year Reasoning Questions
+
+</p></div></section><!-- ==========================
+     HOME BUTTONS
+=========================== --><section class="home-buttons"><button
+onclick="showSection('registerSection')">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Student Registration
+
+</button><button
+onclick="showSection('loginSection')">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Student Login
+
+</button><button
+onclick="showSection('adminSection')">
+
+<i class="fa-solid fa-user-shield"></i>
+
+Admin Login
+
+</button></section>
+
+<!-- ==========================
+     STUDENT REGISTRATION
+========================== --><section
+id="registerSection"
+class="form-section hidden"><div class="card"><h2><i class="fa-solid fa-user-plus"></i>
+
+Student Registration
+
+</h2><input
+type="text"
+id="regName"
+placeholder="Enter Full Name"
+autocomplete="name">
+
+<input
+type="tel"
+id="regMobile"
+placeholder="Enter Mobile Number"
+maxlength="10"
+inputmode="numeric">
+
+<input
+type="password"
+id="regPassword"
+placeholder="Create Password">
+
+<button
+id="registerBtn"
+class="primary-btn">
+
+Register Now
+
+</button><p class="switch-text">Already Registered?
+
+<span
+onclick="showSection('loginSection')">
+
+Login Here
+
+</span></p></div></section><!-- ==========================
+     STUDENT LOGIN
+========================== --><section
+id="loginSection"
+class="form-section hidden"><div class="card"><h2><i class="fa-solid fa-right-to-bracket"></i>
+
+Student Login
+
+</h2><input
+type="tel"
+id="loginMobile"
+placeholder="Enter Mobile Number"
+maxlength="10"
+inputmode="numeric">
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Enter Password">
+
+<button
+id="loginBtn"
+class="primary-btn">
+
+Login
+
+</button><p class="switch-text">New Student?
+
+<span
+onclick="showSection('registerSection')">
+
+Register Here
+
+</span></p></div></section><!-- ==========================
+     ADMIN LOGIN
+========================== --><section
+id="adminSection"
+class="form-section hidden"><div class="card"><h2><i class="fa-solid fa-user-shield"></i>
+
+Admin Login
+
+</h2><input
+type="text"
+id="adminUser"
+placeholder="Admin Username"
+autocomplete="username">
+
+<input
+type="password"
+id="adminPassword"
+placeholder="Admin Password"
+autocomplete="current-password">
+
+<button
+id="adminLoginBtn"
+class="admin-btn">
+
+Admin Login
+
+</button></div></section>
+
+<!-- ==========================
+     LOADING SCREEN
+========================== --><div id="loadingScreen" class="hidden"><div class="loader"></div><p>Please Wait...
+
+</p></div><!-- ==========================
+     FOOTER
+========================== --><footer><h3>PARAMOUNT ACADEMY KHANDWA
+
+</h3><p>Reasoning By Manish Sir
+
+</p><p>© 2026 Paramount Academy. All Rights Reserved.
+
+</p></footer></div><!-- ==========================
+     FIREBASE LIBRARY
+========================== --><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script><!-- ==========================
+     FIREBASE CONFIG
+========================== --><script src="js/firebase-config.js"></script><!-- ==========================
+     MAIN APP
+========================== --><script src="js/app.js"></script></body></html>
