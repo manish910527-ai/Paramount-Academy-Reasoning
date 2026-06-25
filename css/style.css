@@ -1,0 +1,1014 @@
+/* =======================================================
+   PARAMOUNT ACADEMY KHANDWA
+   STYLE.CSS
+   VERSION : 3.0 STABLE
+   MODULE  : HOME PAGE
+======================================================= */
+
+
+/* ======================================
+   RESET
+====================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+/* ======================================
+   ROOT COLORS
+====================================== */
+
+:root{
+
+--primary:#0B1F3A;
+
+--secondary:#D4AF37;
+
+--white:#ffffff;
+
+--light:#f5f7fb;
+
+--dark:#202124;
+
+--shadow:0 12px 30px rgba(0,0,0,.15);
+
+--radius:18px;
+
+}
+
+
+/* ======================================
+   BODY
+====================================== */
+
+body{
+
+background:var(--light);
+
+color:var(--dark);
+
+overflow-x:hidden;
+
+}
+
+
+/* ======================================
+   SPLASH SCREEN
+====================================== */
+
+#splashScreen{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:var(--primary);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+
+#logo{
+
+width:120px;
+
+margin-bottom:20px;
+
+}
+
+
+#splashScreen h1{
+
+color:white;
+
+font-size:28px;
+
+font-weight:700;
+
+}
+
+
+#splashScreen p{
+
+color:#ddd;
+
+margin-top:10px;
+
+font-size:16px;
+
+}
+
+
+/* ======================================
+   APP
+====================================== */
+
+#app{
+
+display:block;
+
+}
+
+
+/* ======================================
+   HEADER
+====================================== */
+
+header{
+
+background:var(--primary);
+
+padding:20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+box-shadow:var(--shadow);
+
+}
+
+
+.logo{
+
+width:70px;
+
+height:70px;
+
+background:white;
+
+border-radius:50%;
+
+padding:5px;
+
+}
+
+
+.header-center{
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.header-center h1{
+
+font-size:24px;
+
+font-weight:700;
+
+}
+
+
+.header-center h3{
+
+margin-top:4px;
+
+color:var(--secondary);
+
+}
+
+
+.header-center p{
+
+margin-top:6px;
+
+font-size:14px;
+
+}
+
+
+/* ======================================
+   HERO BANNER
+====================================== */
+
+.banner{
+
+position:relative;
+
+width:100%;
+
+overflow:hidden;
+
+}
+
+
+.banner img{
+
+width:100%;
+
+display:block;
+
+}
+
+
+.banner-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.45);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+.banner-overlay h2{
+
+color:white;
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+
+.banner-overlay p{
+
+color:#eee;
+
+font-size:17px;
+
+  }
+
+/* ======================================
+   HOME BUTTONS
+====================================== */
+
+.home-buttons{
+
+padding:25px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.home-buttons button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(
+135deg,
+var(--primary),
+#163c6b
+);
+
+color:white;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:var(--shadow);
+
+}
+
+.home-buttons button:hover{
+
+transform:translateY(-3px);
+
+}
+
+.home-buttons i{
+
+margin-right:10px;
+
+color:var(--secondary);
+
+}
+
+
+/* ======================================
+   FORM SECTION
+====================================== */
+
+.form-section{
+
+padding:20px;
+
+}
+
+.hidden{
+
+display:none;
+
+}
+
+
+/* ======================================
+   CARD
+====================================== */
+
+.card{
+
+background:rgba(255,255,255,.98);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+margin-bottom:25px;
+
+animation:fadeUp .5s ease;
+
+}
+
+.card h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+color:var(--primary);
+
+}
+
+.card p{
+
+text-align:center;
+
+margin-top:18px;
+
+font-size:15px;
+
+}
+
+.card span{
+
+color:var(--secondary);
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+
+/* ======================================
+   INPUT BOX
+====================================== */
+
+.card input{
+
+width:100%;
+
+padding:15px;
+
+margin:12px 0;
+
+border:2px solid #ddd;
+
+border-radius:12px;
+
+font-size:16px;
+
+transition:.3s;
+
+outline:none;
+
+background:#fafafa;
+
+}
+
+.card input:focus{
+
+border-color:var(--secondary);
+
+background:white;
+
+box-shadow:0 0 10px rgba(212,175,55,.25);
+
+}
+
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+.primary-btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(
+135deg,
+var(--secondary),
+#f1c94d
+);
+
+color:#111;
+
+font-size:17px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+margin-top:10px;
+
+}
+
+.primary-btn:hover{
+
+transform:scale(1.02);
+
+}
+
+.admin-btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(
+135deg,
+#8b0000,
+#d32f2f
+);
+
+color:white;
+
+font-size:17px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+margin-top:10px;
+
+}
+
+.admin-btn:hover{
+
+transform:scale(1.02);
+
+}
+
+/* ======================================
+   LOADING SCREEN
+====================================== */
+
+#loadingScreen{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:rgba(11,31,58,.96);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999999;
+
+}
+
+.loader{
+
+width:70px;
+
+height:70px;
+
+border:6px solid rgba(255,255,255,.25);
+
+border-top:6px solid var(--secondary);
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+#loadingScreen p{
+
+margin-top:20px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:white;
+
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+
+margin-top:40px;
+
+padding:30px 20px;
+
+background:var(--primary);
+
+color:white;
+
+text-align:center;
+
+}
+
+footer h3{
+
+color:var(--secondary);
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+footer p{
+
+font-size:14px;
+
+margin-top:5px;
+
+opacity:.9;
+
+}
+
+
+/* ======================================
+   ANIMATIONS
+====================================== */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes spin{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+@keyframes zoomIn{
+
+0%{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+
+}
+
+100%{
+
+opacity:1;
+
+}
+
+}
+
+
+/* ======================================
+   UTILITY CLASSES
+====================================== */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.mt-10{
+
+margin-top:10px;
+
+}
+
+.mt-20{
+
+margin-top:20px;
+
+}
+
+.mt-30{
+
+margin-top:30px;
+
+}
+
+.mb-20{
+
+margin-bottom:20px;
+
+}
+
+.shadow{
+
+box-shadow:var(--shadow);
+
+}
+
+.round{
+
+border-radius:var(--radius);
+
+}
+
+
+/* ======================================
+   SCROLLBAR
+====================================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--secondary);
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#b8911e;
+
+}
+
+/* =======================================================
+   STYLE.CSS
+   VERSION : 3.0 STABLE
+   PART 4/4
+   RESPONSIVE + FINAL POLISH
+=======================================================*/
+
+
+/* ======================================
+   TABLET
+====================================== */
+
+@media (min-width:768px){
+
+header{
+
+padding:25px 40px;
+
+}
+
+.logo{
+
+width:90px;
+
+height:90px;
+
+}
+
+.header-center h1{
+
+font-size:34px;
+
+}
+
+.header-center h3{
+
+font-size:22px;
+
+}
+
+.banner-overlay h2{
+
+font-size:42px;
+
+}
+
+.banner-overlay p{
+
+font-size:20px;
+
+}
+
+.home-buttons{
+
+width:500px;
+
+margin:auto;
+
+}
+
+.card{
+
+width:550px;
+
+margin:30px auto;
+
+}
+
+}
+
+
+/* ======================================
+   DESKTOP
+====================================== */
+
+@media (min-width:1024px){
+
+body{
+
+background:#edf2f8;
+
+}
+
+#app{
+
+max-width:1200px;
+
+margin:auto;
+
+background:white;
+
+box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+min-height:100vh;
+
+}
+
+.banner{
+
+padding:15px;
+
+}
+
+.banner img{
+
+border-radius:18px;
+
+}
+
+footer{
+
+border-radius:20px 20px 0 0;
+
+}
+
+}
+
+
+/* ======================================
+   BUTTON EFFECT
+====================================== */
+
+button{
+
+transition:.30s ease;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+button:active{
+
+transform:scale(.97);
+
+}
+
+
+/* ======================================
+   INPUT EFFECT
+====================================== */
+
+input{
+
+transition:.30s ease;
+
+}
+
+input:hover{
+
+border-color:var(--secondary);
+
+}
+
+
+/* ======================================
+   IMAGE
+====================================== */
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+
+/* ======================================
+   SELECTION
+====================================== */
+
+::selection{
+
+background:var(--secondary);
+
+color:white;
+
+}
+
+
+/* ======================================
+   HTML
+====================================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+/* ======================================
+   FOCUS
+====================================== */
+
+button:focus,
+
+input:focus{
+
+outline:none;
+
+}
+
+
+/* ======================================
+   SPLASH HIDE
+====================================== */
+
+.hideSplash{
+
+display:none!important;
+
+}
+
+
+/* ======================================
+   VERSION
+====================================== */
+
+.version{
+
+text-align:center;
+
+padding:15px;
+
+font-size:13px;
+
+color:#777;
+
+}
+
+
+/* ======================================
+   END OF FILE
+====================================== */
