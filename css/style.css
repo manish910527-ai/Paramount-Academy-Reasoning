@@ -52,7 +52,7 @@ background:var(--light);
 color:var(--dark);
 
 overflow-x:hidden;
-
+padding-top:25px;
 }
 
 
@@ -148,7 +148,8 @@ justify-content:center;
 gap:15px;
 
 box-shadow:var(--shadow);
-
+padding-top:20px;
+min-height:220px;
 }
 
 
@@ -260,7 +261,7 @@ padding:20px;
 
 color:white;
 
-font-size:30px;
+font-size:38px;
 
 margin-bottom:10px;
 
